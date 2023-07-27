@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashmin-profile</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <section class="hero-header" id="home">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text">Ashmin</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#porfolio">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="profile-pic.jpg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi, I'm <span class="iinput"></span></h5>
+                    <h1>Ashmin</h1>
+                    <p>Investing in tomorrow's technology today is more critical than ever...<br><br>
+                        - Bill Gates.</p>
+                    <div class="btn-group">
+                        <a href="#" class="btn active">Download Resume</a>
+                        <a href="#" class="btn active">Contact</a>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                        <a href="#"><i class="fa-brands fa-pintrest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Portfolio" id="portfolio">
+        <div class="container">
+            <div class="hero-contain">
+                <div class="hero-imgg">
+                    <img src="portfolio-pic.jpg" alt="">
+                </div>
+                <div class="hero-portfolio">
+                    <div class="hero-portfolio-txt">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <div id="typed-strings">
+        <span>Web Designer</span>
+        <span>Frendend Developer</span>
+      <span>Web Developer</span>
+      <span>Drower</span>
+    </div>
+    <script>
+
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+        var links = document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click",function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed = new Typed(".iinput", {
+      stringsElement: '#typed-strings',
+      typeSpeed: 40,
+      backSpeed: 50,
+      startDelay: 100,
+      loop: true,
+    });
+
+    </script>
+
+</body>
+</html>
